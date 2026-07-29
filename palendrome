@@ -1,0 +1,33 @@
+palendrome number
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\
+#########################
+
+
+package kumarjava;
+import java.util.*;
+public class Palendrome {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number");
+		int num=sc.nextInt();
+		int s1=num;
+		int del=0;
+		int nnm=0;
+		while(num!=0) {
+			del=num/10;
+			nnm=nnm*10+del;
+			
+			num=num%10;
+		}
+		if(s1==nnm) {
+			System.out.println("yes it is palendrome");
+		}
+		else {
+			System.out.println("no it no t a palendrome");
+		}
+		sc.close();
+
+	}
+}
