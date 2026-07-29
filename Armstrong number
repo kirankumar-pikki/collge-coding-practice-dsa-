@@ -1,0 +1,59 @@
+armstrong number...........
+153.is a armstrong number..
+/////////////////////
+####################
+
+package kumarjava;
+import java.util.*;
+
+public class Sum {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number");
+		int num=sc.nextInt();
+		int kim=num;
+		int extract=num;
+		int count=0;
+		int extracted=0;
+		int digit=0;
+		int sum=0;
+		
+		
+		
+//		count no of digits
+		while(num!=0) {
+			num=num/10;
+			count++;
+		}
+//		System.out.println(count);
+//		System.out.println(num);
+		
+//		extracting number
+		while(extract!=0) {
+			extracted=extract%10;
+//			System.out.println("extracted digit"+extracted);
+			extract=extract/10;
+			digit=extracted;
+			for(int i=2;i<=count;i++) {
+			digit=digit*extracted;
+			}
+			sum=sum+digit;
+//			System.out.println("sum value"+sum);
+			
+		
+//		armcal
+			
+			
+			
+			
+	}
+//		System.out.println("final sum"+sum);
+		if(sum==kim) {
+			System.out.println("yes it is armstrong");
+		}
+		else {
+			System.out.println("no it is not armstrong");
+		}
+		
+}
+}
